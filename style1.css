@@ -1,0 +1,327 @@
+@font-face{
+    font-family: "MaSuperPolice";
+    src:url(./KaushanScript-Regular.otf) format('truetype');
+}
+/* Body */
+
+body{
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin-bottom: 5em;
+}
+
+/* Bandeau / Titre */
+
+.bandeau{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(./Images/img3.jpg);
+    height: 1900px; /* Taille de l'image */
+    background-attachment: fixed;
+    border: solid 2px;
+    opacity: 80%;
+}
+.titre
+{
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    font-size: 600%;
+    color: #020202;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1em;
+    font-family: 'MaSuperPolice';
+}
+
+/* Menu déroulant */
+
+nav{
+    width: 30%;
+    margin: 2em auto;
+    position: relative;
+    top: 1px;
+    text-align: left;
+}
+
+.liste{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+nav ul{
+    list-style-type: circle; /* Définir l'apparence de la puce d'un élément de liste */
+}
+
+nav ul li{
+    float: left; /* Indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. */
+    width: 25%;
+    text-align: left;
+    position: relative;
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC; /* ajoute des ombres à la boîte d'un élément.*/
+    background-color: white;
+    position: absolute;
+    width: 100%; /* permet de définir la largeur de la boîte du contenu d'un élément. */
+    z-index: 1000; /* Détermine l'ordre d'affichage : premier plan, second plan... */
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+/* BLOC Jours de la semaine */
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-family: 'MaSuperPolice';
+    font-size: 150%;
+}
+
+.jour{
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-family: 'MaSuperPolice';
+    font-size: 200%;
+}
+
+.J1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: inline-block;
+    width: 2,5em;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    padding: 5em; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background: rgba(180, 176, 228, 0.76);
+    border-radius: 10% 30% 50% 70%; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    text-align: auto;
+    font-weight: bold;
+
+}
+
+.J2{
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    display: inline-block;
+    width: 2,5em;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    padding: 5em; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background: rgba(180, 176, 228, 0.76);
+    border-radius: 10% 30% 50% 70%; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    text-align: auto;
+    font-weight: bold;
+
+}
+
+.J3{
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    display: inline-block;
+    width: 2,5em;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    padding: 5em; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background: rgba(180, 176, 228, 0.76);
+    border-radius: 10% 30% 50% 70%; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    text-align: auto;
+    font-weight: bold;
+
+}
+
+.J4{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    display: inline-block;
+    width: 2,5em;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    padding: 5em; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background: rgba(180, 176, 228, 0.76);
+    border-radius: 10% 30% 50% 70%; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    text-align: auto;
+    font-weight: bold;
+
+}
+
+.J5{
+    position: absolute;
+    top: 30%;
+    left: 77%;
+    display: inline-block;
+    width: 2,5em;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    padding: 5em; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background: rgba(180, 176, 228, 0.76);
+    border-radius: 10% 30% 50% 70%; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    text-align: auto;
+    font-weight: bold;
+}
+
+.Texte{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    margin: 18% 2em 0em 2em;
+    color:rgb(0, 0, 0);
+    font-family: 'MaSuperPolice';
+}
+
+.Reserver{
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    margin: 17em 10% 0% 8%;
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+}
+p{
+    font-size: 2em;
+}
+
+.img2{
+    margin: 12em 0em 0em 50em;
+    background-image: url(./Images/img2.jpg);
+    background-repeat: no-repeat;
+    height: 20em;
+    max-width: 100%;
+}
+
+/* FOOTER
+Footer left et center et Principal*/
+/*
+.footer-principal{
+    padding: 1em;
+    position: relative;
+}
+
+.footer-principal, .footer-left{
+	width: 100%;
+}
+
+.footer-center{
+	width: 35%;
+}
+
+.footer-principal, .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-principal, .footer-center{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-principal, .footer-center{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-center{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-principal, .footer-center{
+	color:  rgb(184, 243, 240);
+    text-decoration: none;;
+}
+
+.footer-principal{
+    content: "none";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+/* Footer Right et Principal */
+/*
+.footer-principal, .footer-right{
+	width: 20%;
+}
+
+.footer-principal{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-principal{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-principal, .footer-icons{ 
+	margin-top: 25px;
+}
+
+.footer-principal, .footer-icons{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
