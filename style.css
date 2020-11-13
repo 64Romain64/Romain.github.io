@@ -1,0 +1,151 @@
+/* --------------------------------
+--------------POLICE --------------
+---------------------------------*/
+
+@font-face{
+    font-family: "MaPolice";
+    src:url(./Police_ecriture/Italiana-Regular.ttf) format('truetype');
+}
+
+/* --------------------------------
+-----------IMAGE DE FOND ----------
+---------------------------------*/
+
+body {
+    background-image: url(./Images/img3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding:0;
+}
+
+/* --------------------------------
+----------------BODY---------------
+---------------------------------*/
+
+    /* --------------------------------
+    --------------HEADER---------------
+    ---------------------------------*/
+
+.logo { 
+    position: absolute;
+    margin: 1% 1%;
+    height:100px;
+    }
+
+/* ----------MENU---------*/ 
+
+nav{ 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none; /* Enlève les puces */
+    text-align: center;
+    font-family: "MaPolice";
+}
+
+nav ul li{ 
+    display: inline-block;
+    margin-left: 4%;
+}
+
+
+nav a{
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+nav a:hover{ /* Effets "Menu" au passage de la souris */
+    color: rgb(126, 2, 2);
+    border-bottom: 2px solid rgb(126, 2, 2);
+}
+
+/* --------SOUS-MENU---------*/ 
+
+.sous{
+    display: none;
+    position: absolute;
+    padding: 0; /* Permet de mettre le sous-menu aligné à gauche */
+    z-index: 1000; /* Permet l'affichage au premier plan */
+}
+
+.sous li{
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+nav > ul li:hover .sous{
+    display: block; /* Alignement vertical du sous-menu*/
+}
+
+.sous a{
+    color : rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+    /* --------------------------------
+    --------------MAIN-----------------
+    ---------------------------------*/
+
+        /* --------------------------------
+        --------------ASIDE----------------
+        ---------------------------------*/
+
+main section{
+    display:flex;
+}
+
+main aside{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.reseaux{
+    margin-top: 30px;
+}
+
+p{  
+    font-size: 250%;
+    writing-mode: vertical-lr;
+    font-family: "MaPolice";
+    color: rgb(255, 255, 255);
+    padding: 0% 0% 100% 0%;
+}
+
+p:hover{ /* Effets "Follow-me" au passage de la souris */
+    color: rgb(255, 0, 0);
+	text-shadow: 0px 2px 0px rgb(0, 0, 0);
+}
+
+        /* --------------------------------
+        --------------ARTICLE--------------
+        ---------------------------------*/
+
+.formation{
+    block-size: 100px;
+    margin : 50% 0 0 200px;
+    font-size:150%;
+    font-weight: bold;
+    font-family:"MaPolice";
+}
+
+.nom{
+    margin-left: 50px;
+    font-size:500%;
+    font-weight: bold;
+    font-family:"MaPolice";
+}
+
+.prenom {
+    margin-left: 50px;
+    font-size: 400%;
+    font-weight: bold;
+    font-family:"MaPolice";
+}
+
